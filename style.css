@@ -1,0 +1,176 @@
+/* * {
+    border: 2px solid red;
+} */
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1, .footer {
+    background-color: #C1839F;
+    justify-content: center;
+    color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+}
+
+h2 {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.number_pad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    max-width: 300px;
+
+    margin-bottom: 2%;
+}
+
+.number_pad button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.data_summary_grid, .number_pad button {
+    background-color: #087E8B;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #F5F5F5;
+}
+
+.data_summary_header {
+    text-align: left;
+    border-right: 1px solid #F5F5F5;
+}
+
+.data_summary {
+    margin-bottom: 6%;
+    width: 95%;
+}
+
+.send_attempt_header {
+    border-bottom: 1px solid #F5F5F5;
+}
+
+#blank_header {
+    border-right: 1px solid #F5F5F5;
+}
+
+.sends {
+    border-right: 1px solid #F5F5F5;
+}
+
+.add_note {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#day, #note_comment {
+    background-color: #087E8B;
+    color: #F5F5F5;
+    border: 1px solid #F5F5F5 ;
+}
+
+#day {
+    display: flex;
+    justify-content: center;
+}
+
+#excel_export {
+    background-color:#FF5A5F ;
+    border-radius: 0;
+    border: none;
+    width: 40%;
+    justify-content: center;
+    color: #F5F5F5;
+    font-size: 14.5px;
+    margin: 2% 0 2% 0;
+}
+
+.input_section {
+    background-color: #F5F5F5;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.data   {
+    background-color: #3C3C3C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#data_text {
+    color: #F5F5F5;
+}
+
+.data_summary_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.other_grade button, #note_box {
+    margin-bottom: 7%;
+    border-radius: 0;
+    font-size: 18px;
+    background-color: #087E8B;
+    color: #F5F5F5;
+    border: none;
+}
+
+#note_box, #add_comment {
+    height: 20px;
+    padding: 2px;
+}
+
+#add_comment {
+    border-radius: 0;
+    margin-left: 3px;
+    border: none;
+    background-color: rgb(202, 202, 202);
+    }
+
+.output_data {
+    margin-bottom: 5%;
+    width: 95%;
+}
+
+table {
+    width: 100%;
+    float: right;
+    border-collapse: separate;
+    border-spacing: 0 ;
+    color: #F5F5F5;
+}
+
+th, td {
+    border: 1px solid #F5F5F5;
+    margin: 0;
+    width: 33.33%;
+    background-color: #087E8B;
+}
+
+td {
+    text-align: center;
+}
+
+.empty {
+    visibility: hidden;
+    background-color: #3C3C3C;
+}
