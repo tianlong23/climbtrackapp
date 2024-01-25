@@ -14,7 +14,7 @@ function addRoute(value) {
     var currentDate = new Date().toLocaleDateString();
     dateCell.innerText = currentDate;
     sendsCell.innerText = value;
-    attemptsCell.innerText = ""; // You may update this cell if needed
+    attemptsCell.innerText = ""; 
 
     // Add a class to the date cell to hide it
     dateCell.classList.add('empty');
@@ -23,23 +23,19 @@ function addRoute(value) {
     updateDataSummary();
 }
 
-//NEED TO FIND OUT WHY VALUES NOT UPDATING IN SUMMARY TABLE
-
 function updateDataSummary() {
     var sendsColumn = document.querySelectorAll('.table tbody td:nth-child(2)');
     var totalRoutes = sendsColumn.length;
     var totalV = 0;
     var maxGrade = 0;
-    var sumGrades = 0;
 
     sendsColumn.forEach(function (cell) {
         var value = parseInt(cell.innerText);
         totalV += value;
-        sumGrades += value;
         maxGrade = Math.max(maxGrade, value);
     });
 
-    var averageGrade = totalRoutes > 0 ? sumGrades / totalRoutes : 0;
+    var averageGrade = totalRoutes > 0 ? totalV / totalRoutes : 0;
 
     // Update summary values
     document.querySelector('.sends_total_routes').innerText = totalRoutes;
@@ -48,3 +44,9 @@ function updateDataSummary() {
     document.querySelector('.send_max_grade').innerText = maxGrade;
 }
 
+//HERE, NEED TO CREATE THE POPOVER AND UPDATE SCRIPT SO THAT IT CHOOSES
+//BASED OFF OF SEND OR ATTEMPT AND THEN ADDS TO CORRECT COLUMN
+
+//THEN NEED TO FIGURE OUT EXCEL EXPORT
+
+//THEN FINISH FORMATTING
