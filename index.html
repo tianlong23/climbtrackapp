@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Climb Progress Tracker</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <header>
         <h1>CLIMB TRACKER</h1>
     </header>
+    <div class="popover-container">
+        <div class="popover">
+            <button class="button sent-button">Sent</button>
+            <button class="button attempted-button">Attempted</button>
+            <button class="button cancel-button">Cancel</button>
+        </div>
+    </div>
     <main>
         <div class="input_section">
             <div id="input_text">
@@ -50,16 +56,16 @@
                     <div class="send_attempt_header">Attempts</div>
                     <div class="data_summary_header">Total Routes</div>
                     <div class="sends sends_total_routes">0</div>
-                    <div>5</div>
+                    <div class="attempts attempt_total_routes">0</div>
                     <div class="data_summary_header">Average Grade</div>
                     <div class="sends send_average_grade">0</div>
-                    <div>6.23</div>
+                    <div class="attempts attempt_average_grade">0</div>
                     <div class="data_summary_header">Total V</div>
                     <div class="sends send_totalv">0</div>
-                    <div>15</div>
+                    <div class="attempts attempt_total_v">0</div>
                     <div class="data_summary_header">Max Grade</div>
                     <div class="sends send_max_grade">0</div>
-                    <div>6</div>
+                    <div class="attempts attempt_max_grade">0</div>
                 </div>
             </div>
             <div class="output_data">
@@ -78,12 +84,6 @@
         </div>
         <div class="footer">For Personal Use by Christian</div>
     </main>
-    <div class="popover-container">
-        <div class="popover">
-            <button class="button sent-button">Sent</button>
-            <button class="button attempted-button">Attempted</button>
-            <button class="button cancel-button">Cancel</button>
-        </div>
-    </div>
+    <script src="script.js" defer></script>
 </body>
 </html>
